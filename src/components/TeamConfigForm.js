@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import Member from './Member'
+import Member from './Members/MemberForm'
 
 export default class Team extends Component {
 
@@ -17,7 +17,6 @@ export default class Team extends Component {
   render() {
     return (
       <div>
-        <Member/>
         <div className="card">
           <h3 className="text-center my-5">Choix du parametre </h3>
           <form onSubmit="#" className="form-inline">
