@@ -13,7 +13,7 @@ export default class Member extends Component {
         {value => (
           value.pseudos.map((pseudo,index) => {
             return (
-              <div className="card text-center my-1 mx-auto" key={index}>
+              <div className="card text-center my-1 mx-auto col-4" key={index}>
               <h4>{pseudo}
                 <i 
                   className="fa fa-times ml-2" 

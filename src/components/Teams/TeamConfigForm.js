@@ -1,13 +1,12 @@
 import React, { Component } from 'react'
-import Member from './Members/MemberForm'
 
-export default class Team extends Component {
+export default class TeamConfigForm extends Component {
+
 
   state = {
-    name : "",
-    players : [],
+    numbreEquipe : "", 
+    numbreJoueurs : "", 
   }
-
 /*   onSubmit = (e) => {
     this.setState ({
       
@@ -25,19 +24,13 @@ export default class Team extends Component {
             className="form-control mx-auto"
             name="nombreEquipe"
             />
-            
             <label htmlFor="nombreJoueurs" className="col-12">Nombre de joueurs par équipe</label>
             <input type="number"
             className="form-control mx-auto"
             name="nombreJoueurs"
             /> 
-          
-          
+
           </form>
-          
-          <button className="btn btn-primary btn-block">
-                  Générer les équipes
-          </button>
         </div>
       </div>
     )
