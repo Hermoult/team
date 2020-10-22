@@ -1,21 +1,23 @@
-import React, { Component } from 'react'
+import React, { Component } from "react";
 
 export default class TeamButton extends Component {
-  
-  render() {
+  state = {
+    pseudo: [],
+    nombreJoueur: "",
+    nombreEquipe: "",
+  };
 
+  render() {
     onSubmit = (e) => {
       e.preventdefault();
-      
-    }
-
+    };
 
     return (
-      <div>
-          <button className="btn btn-primary btn-block" onClick={this.onSubmit}>
-            Générer les équipes
-          </button>
-      </div>
-    )
+      <>
+        <button className="btn btn-primary btn-block" onClick={this.onSubmit}>
+          Générer les équipes
+        </button>
+      </>
+    );
   }
 }
